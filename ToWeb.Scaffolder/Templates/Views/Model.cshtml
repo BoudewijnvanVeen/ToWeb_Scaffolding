@@ -1,0 +1,17 @@
+﻿@model ToWeb.Scaffolder.Models.SimpelModel.SimpelModel
+
+using System;
+namespace @Model.Title
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            @for (int i = 0; i < 3; i++)
+            {
+                @:Debug.WriteLine("hello @i " + @Model.Title);
+                @:Debug.WriteLine("hello @i " + @Model.Date.ToString("g"));
+            }
+        }
+    }
+}
